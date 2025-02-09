@@ -18,8 +18,42 @@ In my opinion, they are :
 - PostgreSQL : an open-source, object-relational database system known for its robustness, advanced features, and support for a variety of data types.
 - MongoDB : one of the leading NoSQL databases and has gained significant traction for its flexibility and scalability.
 
+# Task 2
+## What is RDBMS?
+RDBMS stands for Relational Database Management System. It is a program used to manage relational databeses. A relational database is a collection of information that organizes data in predefined relationships where data is stored in one or more tables (or "relations") of columns and rows, making it easy to see and understand how different data structures relate to each other. 
+
+## RDBMS VS DBMS
+Database management system is a management system that is used to manage the entire flow of data. RDBMS is a type of DBMS it deals with relations as well as various key constraints. This aids in the reduction of data redundancy and the preservation of database integrity.
+Here are key differences:
+| RDBMS | DBMS |
+|----------|----------|
+|stores data in tabular form|stores data as a file|
+|data is stored as tables with relations between them|No relationship between data|
+|Normalization is present.|Normalization is not present.|
+|deals with large amount of data.|deals with small amount of data.|
+|Keys and indexes do not allow Data redundancy.|Data redundancy is common|
+|fast data fetching|slow data fetching|
+
+## Naming conventions.
+- Tables :
+  - Avoid abbreviations.
+  - Avoid using DBMS-specific keywords.
+  - Singular or plural names are allowed but keep it consistent.
+  - Keep it consistent when it comes to the case (camelCase, lowercase, etc).
+- Columns :
+  - Each column name should be unique.
+  - Avoid abbreviations.
+  - Don't make it very generic.
+- Primary Keys :
+  - Use domain-specific names like StudentID or ID_Student.
+  - Prefixes or suffixes can be added to make them stand out from general column naming (e.g. Students_PK, PK_Students).
+- Foreign Keys :
+  - it is good to name your foreign key with the same name consistently throughout the database to avoid any confusion. 
+  - Prefixes and suffixes can be used similar to primary keys.
+
 # References
 - [geeks for geeks](https://www.geeksforgeeks.org/)
 - [Oracle](https://www.oracle.com/database/what-is-database/)
 - [Data Science Central](https://www.datasciencecentral.com/history-of-mysql/)
 - [Tutorials point](https://www.tutorialspoint.com/discuss-the-history-of-mysql)
+- [Google Cloud](https://cloud.google.com/learn/what-is-a-relational-database?hl=en)
