@@ -51,9 +51,42 @@ Here are key differences:
   - it is good to name your foreign key with the same name consistently throughout the database to avoid any confusion. 
   - Prefixes and suffixes can be used similar to primary keys.
 
+# Task 3
+## Primary keys vs unique keys
+Primary Key:
+- There will be no duplicate row in case of a Primary Key.
+- Only a single primary key exists for a table.
+- Primary Key contains NOT NULL constraints.
+- The primary Key can be made from one or more table fields.
+
+Unique Key:
+- There can be more than one unique key for a table.
+- Unique Keys have the liberty of having NULL values in the column.
+- Unique Keys can be formed from one or more tables.
+- Foreign Keys can refer to Unique Keys for referencing.
+
+## Constraints in MySQL.
+Constraints are used to limit the type of data that can go into a table. 
+The following constraints are commonly used in SQL:
+- NOT NULL - Ensures that a column cannot have a NULL value
+- UNIQUE - Ensures that all values in a column are different
+- PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+- FOREIGN KEY - Prevents actions that would destroy links between tables
+- CHECK - Ensures that the values in a column satisfies a specific condition
+- DEFAULT - Sets a default value for a column if no value is specified
+- CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+## Indexing in MySQL.
+Indexes are used to find rows with specific column values quickly, instead of searching linearly. If the table has an index for the columns in question, MySQL can quickly determine the position to seek to in the middle of the data file without having to look at all the data. Most MySQL indexes (PRIMARY KEY, UNIQUE, INDEX, and FULLTEXT) are stored in B-trees.
+
+## Difference between MySQL and Postgresql
+- MySQL: It is known for its speed and reliability, widely used in web applications and is a preferred choice for read-heavy operations. Also known for being user-friendly and relatively simple to set up.
+- PostgreSQL: known for its advanced features, extensibility and compliance with SQL standards. It offers robust support for complex queries, transactions, and data integrity. PostgreSQL is a good choice for applications requiring complex queries and transactions.
+
 # References
 - [geeks for geeks](https://www.geeksforgeeks.org/)
 - [Oracle](https://www.oracle.com/database/what-is-database/)
 - [Data Science Central](https://www.datasciencecentral.com/history-of-mysql/)
 - [Tutorials point](https://www.tutorialspoint.com/discuss-the-history-of-mysql)
 - [Google Cloud](https://cloud.google.com/learn/what-is-a-relational-database?hl=en)
+- [MySQL DEV](https://dev.mysql.com/doc/refman/8.4/en/)
