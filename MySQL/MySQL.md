@@ -83,6 +83,41 @@ Indexes are used to find rows with specific column values quickly, instead of se
 - MySQL: It is known for its speed and reliability, widely used in web applications and is a preferred choice for read-heavy operations. Also known for being user-friendly and relatively simple to set up.
 - PostgreSQL: known for its advanced features, extensibility and compliance with SQL standards. It offers robust support for complex queries, transactions, and data integrity. PostgreSQL is a good choice for applications requiring complex queries and transactions.
 
+# Task 4
+## Relations (one to one, one to many, many to many).
+Relationships in SQL tables define how tables are connected to one another, this provides efficient data retrieval.
+### One to One
+Each record in Table A is associated with one and only one record in Table B, and vice versa.
+### One to Many
+Each record in Table A can be associated with multiple records in Table B, but each record in Table B is associated with only one record in Table A.
+### Many to Many
+Each record in Table A can be associated with multiple records in Table B, and vice versa.
+
+## Write-ahead logging.
+Write-Ahead Logging (WAL) is a technique used in storage systems to ensure the durability and consistency of transactions.
+The basic idea behind WAL is to record changes in a log before they are applied to the actual storage. This log, often referred to as the write-ahead log, contains a sequential record of all changes made to the database. Transactions are not considered complete until the corresponding changes are safely recorded in the write-ahead log.
+
+## What are normalization and denormalization? Explain their differences.
+The main difference between normalization and denormalization is that normalization is used to remove the redundancy in the table, while denormalization is used to add the redundancy which means combining multiple tables so that execute query quickly.
+### Normalization
+Advantages
+- Data is reduced in the table.
+- Optimized memory.
+- Maintain data integrity.
+
+Disadvantages
+- The number of tables is increased.
+- Consume more resources when using joins expensive operations.
+### Denormalization
+Advantages
+- Execute the query quickly.
+- Decreased the number of tables
+
+Disadvantages
+- Wastage of memory because store the duplicate data.
+- Increase the number of tables.
+- Does not maintain data integrity.
+
 # References
 - [geeks for geeks](https://www.geeksforgeeks.org/)
 - [Oracle](https://www.oracle.com/database/what-is-database/)
