@@ -1,4 +1,4 @@
-
+-- check ERD.png
 DROP DATABASE IF EXISTS Airport;
 CREATE DATABASE Airport;
 USE Airport;

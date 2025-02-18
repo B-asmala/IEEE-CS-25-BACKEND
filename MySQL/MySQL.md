@@ -118,6 +118,23 @@ Disadvantages
 - Increase the number of tables.
 - Does not maintain data integrity.
 
+# Task 5
+## Multi-version concurrency Control
+(MVCC) is a database optimization method, that makes redundant copies of records to allow for safe concurrent reading and updating of data. In the database, every tuple has a version number. The tuple with the greatest version number can have a read operation done on it simultaneously. Only a copy of the record may be used for writing operations. While the copy is being updated concurrently, the user may still view the previous version. The version number is increased upon successful completion of the writing process. The upgraded version is now used for every new record operation and every time there is an update, this cycle is repeated.
+
+## Triggers
+A trigger is a stored procedure in a database that automatically invokes whenever a special event in the database occurs. By using SQL triggers, developers can automate tasks, ensure data consistency, and keep accurate records of database activities. For example, a trigger can be invoked when a row is inserted into a specified table or when specific table columns are updated.
+
+
+## How can you take the backup of a database?
+Automatic backups can be run regulary (e.g, once a day). 
+There are several methods :
+- Making a Hot Backup with MySQL Enterprise Backup
+- Making Backups by Copying Table Files
+- Making Backups with mysqldump
+- Making Incremental Backups by Enabling the Binary Log
+- Making Delimited-Text File Backups
+
 # References
 - [geeks for geeks](https://www.geeksforgeeks.org/)
 - [Oracle](https://www.oracle.com/database/what-is-database/)
