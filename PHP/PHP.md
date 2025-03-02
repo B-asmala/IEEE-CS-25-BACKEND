@@ -18,6 +18,25 @@ The differences are small:
 PHP is partially case-sensitive.
 PHP constructs, function names, class names are case-insensitive, whereas variables are case-sensitive.
 
+# Task 2
+## programming language vs scripting language.
+Scripting languages do not require the compilation step and are rather interpreted.They are used for smaller tasks, whereas programming languages help build large and complex software applications.
+### Applications of Scripting Languages: 
+- To automate certain tasks in a program 
+- Extracting information from a data set 
+- Less code intensive as compared to traditional programming languages  
+### Applications of Programming Languages :
+- They typically run inside a parent program like scripts
+- More compatible while integrating code with mathematical models
+- Languages like JAVA can be compiled and then used on any platform
+
+## dynamically typed vs statically typed language.
+In a statically typed language, data types are defined during compile time and cannot change during runtime. This behavior is because of static type checking. In contrast, dynamic typing allows variables to change their data type during runtime.
+
+## Assign by Value VS Assign by Reference.
+Assigning by value means copying existing variables to a new location in memory, both variables are independent and don't affect eachother.
+Assigning by refernce doesn't copy the value, instead it uses pointers. the new variable references the same variable. changing one of them affects the other. 
+
 
 
 
