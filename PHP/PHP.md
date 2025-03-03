@@ -37,8 +37,17 @@ In a statically typed language, data types are defined during compile time and c
 Assigning by value means copying existing variables to a new location in memory, both variables are independent and don't affect eachother.
 Assigning by refernce doesn't copy the value, instead it uses pointers. the new variable references the same variable. changing one of them affects the other. 
 
+# Task 3
+## What is the difference between for and foreach loop in PHP?
+| for loop   | foreach loop  |
+|---|---|
+|The iteration is clearly visible. The block of code is repeated as long as the condition is met or the counter meets a specific value.    |  The iteration is hidden. The block of code is repeated until iterating over the array is completed. |
+| Good performance.  |  Better performance. |
+|  The stop condition is specified easily. |  The stop condition has to be explicitly specified. |
+| Upon working with collections, it needs the usage of the count() function.   |  It can simply work without the usage of the count() method.  |
 
 
 
 # References
 - [W3 Schools](https://www.w3schools.com/php/php_intro.asp)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/what-is-the-difference-between-for-and-foreach-loop-in-php/)
