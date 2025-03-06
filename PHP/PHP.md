@@ -46,6 +46,18 @@ Assigning by refernce doesn't copy the value, instead it uses pointers. the new 
 |  The stop condition is specified easily. |  The stop condition has to be explicitly specified. |
 | Upon working with collections, it needs the usage of the count() function.   |  It can simply work without the usage of the count() method.  |
 
+# Task 4
+## Sessions vs. Cookies.
+The key difference between sessions and cookies is that sessions are saved on the server side while cookies are saved on the client side. Cookies are small text files used to store user information on the user's computer. Sessions are used to store user information on the user's server side.
+
+## Error Handling in PHP.
+Ways to handle PHP Errors:  
+- Using die() method : print a message and exit from current script: die("File is not present");
+- Custom Error Handling : Creating a custom error handler in PHP is quite simple. Create a function that can be called when a error has been occurred in PHP.
+
+## How PHP Executes Code.
+In PHP, code execution is linear, and the compiling is carried out as well as the executing in cycles per line of a script. Yet, to enhance this flow, PHP uses caching such as opcode caching, which is the set of compiled byte codes that are necessary to run the matter faster in following requests.
+An Opcode is a full PHP VM instruction, that may or may not have operands. These structures contain a simple and single unit of execution, and there is a finite set of such OPCodes.
 
 
 # References
