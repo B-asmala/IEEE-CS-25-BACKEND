@@ -12,3 +12,30 @@ Put another way, you can see the ORM as the layer that connects object oriented 
 When interacting with a database using OOP languages, you'll have to perform different operations like creating, reading, updating, and deleting (CRUD) data from a database. By design, you use SQL for performing these operations in relational databases.
 
 While using SQL for this purpose isn't necessarily a bad idea, the ORM and ORM tools help simplify the interaction between relational databases and different OOP languages.
+
+# Task 22
+## Defining relationships in Eloquent models
+We can define relations with respect to the model we are defining it in. for example if we have a User model and a Post model we can do it like this:
+```
+class User extends Model
+{
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+}
+```
+
+and the post model
+```
+class Post extends Model
+{
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
+```
+this is a one to many relationship.
+
+
